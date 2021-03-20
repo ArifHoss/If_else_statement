@@ -10,16 +10,10 @@ public class If_Else_Statement {
         System.out.print ("Enter number: ");
         int N = sc.nextInt ();
 
-        if (N <= 100 && N % 2 == 1) {
+        if ((N%2) == 1 || N > 5 && N < 21 && (N%2) == 0)  {
             System.out.println ("Weird!");
-        } else if (N > 1 && N < 6 && N % 2 == 0) {
+        } else if (N>1 && N<6 && (N%2) == 0 || N>20 && N<101 && (N%2) == 0) {
             System.out.println ("Not Weird");
-        } else if (N > 5 && N < 21 && N % 2 == 0) {
-            System.out.println ("Weird");
-        } else if (N > 20 && N < 101 && N % 2 == 0) {
-            System.out.println ("Not Weird");
-        } else {
-            System.out.println ("Error!");
         }
 
 
